@@ -14,15 +14,18 @@ public class Categoria {
     @Column
     private String descripcion;
     @Column
+    private String imagen;
+    @Column
     private Boolean estado;
 
     public Categoria() {
     }
 
-    public Categoria(long id, String nombre, String descripcion, Boolean estado) {
+    public Categoria(long id, String nombre, String descripcion, String imagen, Boolean estado) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
+        this.imagen = imagen;
         this.estado = estado;
     }
 
@@ -64,7 +67,16 @@ public class Categoria {
                 "id=" + id +
                 ", nombre='" + nombre + '\'' +
                 ", descripcion='" + descripcion + '\'' +
+                ", imagen='" + imagen + '\'' +
                 ", estado=" + estado +
                 '}';
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 }
