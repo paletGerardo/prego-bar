@@ -43,18 +43,18 @@ var app = new Vue({                 // creo la variable
 
         listarProductosPorId: function (id) {
             if(id < 0){
-                this.$http.get('../ajax/productos/listarProductosPorId.php?id='+id).then(function (response) {
+                this.$http.get('../rest/productos/'+id).then(function (response) {
                     this.listadeProductosPorId = response.data.productos;
                 })
             }else{
-                this.$http.get('../ajax/productos/listarProductosPorId.php?id='+id).then(function (response) {
+                this.$http.get('../rest/productos/'+id).then(function (response) {
                     this.listadeProductosPorId = response.data.productos;
                 })
             }
         },
 
         get_categorias: function () {
-            this.$http.get('../ajax/categorias/listarCategorias.php').then(function (response) {
+            this.$http.get('../rest/categorias').then(function (response) {
                 this.listaDeCategorias = response.data.categorias;
             })
         },
