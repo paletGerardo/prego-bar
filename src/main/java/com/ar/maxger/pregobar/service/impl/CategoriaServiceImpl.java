@@ -36,4 +36,9 @@ public class CategoriaServiceImpl  implements CategoriaService {
     public Categoria updateCategoria(Categoria categoria) {
         return categoriaJpaRepository.save(categoria);
     }
+
+    @Override
+    public Categoria findById(String id) {
+        return categoriaJpaRepository.findById(Long.parseLong(id));
+    }
 }

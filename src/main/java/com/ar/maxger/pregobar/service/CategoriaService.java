@@ -10,4 +10,5 @@ public interface CategoriaService {
     public abstract Categoria addCategoria(Categoria categoria);
     public abstract int removeCategoria(Categoria categoria);
     public abstract Categoria updateCategoria(Categoria categoria);
+    public abstract Categoria findById(String id);
 }
