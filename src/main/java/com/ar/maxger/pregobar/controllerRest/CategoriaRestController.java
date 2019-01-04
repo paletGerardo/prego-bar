@@ -1,4 +1,4 @@
-package com.ar.maxger.pregobar.controller;
+package com.ar.maxger.pregobar.controllerRest;
 
 import com.ar.maxger.pregobar.entity.Categoria;
 import com.ar.maxger.pregobar.service.CategoriaService;
