@@ -15,20 +15,20 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/producto/rest")
+@RequestMapping("/rest")
 public class ProductoRestController {
 
     @Autowired
     @Qualifier("productoServiceImpl")
     ProductoService productoService;
 
-    @GetMapping(value = "/listar", headers = "Accept=application/json")
+    @GetMapping(value = "/productos", headers = "Accept=application/json")
     public List<Producto> getAll(){
         List<Producto> lista = productoService.listAll();
         return lista;
     }
 
-    @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/productos/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Producto> getById(@PathVariable("id") String id){
         Producto producto = productoService.findById(id);
         return new ResponseEntity<Producto>(producto, HttpStatus.OK);

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/categoria/rest")
+@RequestMapping("/rest")
 public class CategoriaRestController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class CategoriaRestController {
 
     private static final Log LOG = LogFactory.getLog(CategoriaRestController.class);
 
-    @GetMapping(value="/listar", headers="Accept=application/json")
+    @GetMapping(value="/categorias", headers="Accept=application/json")
     public List<Categoria> getAll() {
         LOG.info("CategoriaRestController: /listar => categoriaService.listAll()");
         List<Categoria> tasks=categoriaService.listAll();
@@ -34,7 +34,7 @@ public class CategoriaRestController {
 
     }
 
-    @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/categorias/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Categoria> getUserById(@PathVariable("id") String id) {
         LOG.info("CategoriaRestController: /{id} => categoriaService.findById(id) => id: " + id);
         Categoria categoria = categoriaService.findById(id);
