@@ -41,4 +41,9 @@ public class ProductoServiceImpl implements ProductoService {
 
         return productoJpaRepository.findById(Long.parseLong(id));
     }
+
+    @Override
+    public List<Producto> findByIdCategoria(String id) {
+        return productoJpaRepository.findByIdCategoria(id);
+    }
 }

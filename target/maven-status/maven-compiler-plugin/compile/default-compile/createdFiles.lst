@@ -1,0 +1,14 @@
+com/ar/maxger/pregobar/entity/Producto.class
+com/ar/maxger/pregobar/ServletInitializer.class
+com/ar/maxger/pregobar/entity/Categoria.class
+com/ar/maxger/pregobar/repository/ProductoJpaRepository.class
+com/ar/maxger/pregobar/service/impl/CategoriaServiceImpl.class
+com/ar/maxger/pregobar/controllerRest/CategoriaRestController.class
+com/ar/maxger/pregobar/controllerRest/ProductoRestController.class
+com/ar/maxger/pregobar/service/CategoriaService.class
+com/ar/maxger/pregobar/PregoBarApplication.class
+com/ar/maxger/pregobar/controller/HomeController.class
+com/ar/maxger/pregobar/controller/CategoriaController.class
+com/ar/maxger/pregobar/service/ProductoService.class
+com/ar/maxger/pregobar/service/impl/ProductoServiceImpl.class
+com/ar/maxger/pregobar/repository/CategoriaJpaRepository.class

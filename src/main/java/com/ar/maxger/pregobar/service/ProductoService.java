@@ -11,4 +11,5 @@ public interface ProductoService {
     public abstract void removeProducto(String id);
     public abstract Producto updateProducto(Producto producto);
     public abstract Producto findById(String id);
+    public abstract List<Producto> findByIdCategoria(String id);
 }

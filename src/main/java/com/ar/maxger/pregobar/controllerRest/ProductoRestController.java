@@ -28,10 +28,16 @@ public class ProductoRestController {
         return lista;
     }
 
-    @GetMapping(value = "/productos/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/producto/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Producto> getById(@PathVariable("id") String id){
         Producto producto = productoService.findById(id);
         return new ResponseEntity<Producto>(producto, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/producto-por-categoria/{id}", headers = "Accept=application/json")
+    public List<Producto> getByIdCategoria(@PathVariable("id") String id){
+        List<Producto> lista = productoService.findByIdCategoria(id);
+        return lista;
     }
 
 }

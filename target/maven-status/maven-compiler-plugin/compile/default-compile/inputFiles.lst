@@ -1,0 +1,14 @@
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/controller/HomeController.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/service/CategoriaService.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/entity/Producto.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/service/ProductoService.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/service/impl/ProductoServiceImpl.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/service/impl/CategoriaServiceImpl.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/controller/CategoriaController.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/repository/ProductoJpaRepository.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/ServletInitializer.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/PregoBarApplication.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/controllerRest/ProductoRestController.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/controllerRest/CategoriaRestController.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/entity/Categoria.java
+/home/gerr/Desarrollos/java/prego-bar/src/main/java/com/ar/maxger/pregobar/repository/CategoriaJpaRepository.java
