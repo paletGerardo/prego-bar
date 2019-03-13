@@ -1,3 +1,32 @@
+create table Pedido
+(
+  id          int auto_increment
+    primary key,
+  id_producto int not null,
+  id_user     int not null,
+  id_mesa     int not null
+);
+
+create table Rol
+(
+  id          int auto_increment
+    primary key,
+  nombre      varchar(15) not null,
+  descripcion varchar(40) null
+);
+
+create table User
+(
+  id       int         null,
+  nombre   varchar(40) null,
+  apellido varchar(40) null,
+  id_rol   int         null,
+  password varchar(30) null,
+  constraint role___fk
+    foreign key (id_rol) references Rol (id)
+)
+  comment 'Usuario del sistema';
+
 create table categorias
 (
   id          int          not null
@@ -5,9 +34,8 @@ create table categorias
   descripcion varchar(120) not null,
   estado      bit          null,
   imagen      varchar(255) null,
-  nombre      varchar(255) null
-)
-  charset = utf8mb4;
+  nombre      varchar(120) not null
+);
 
 create table hibernate_sequence
 (
